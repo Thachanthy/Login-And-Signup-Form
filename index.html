@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login And Signup Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://t3.ftcdn.net/jpg/04/28/95/04/360_F_428950438_huH4H4ljvjUNHmihS5c1Zz8KvlGpGISo.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="login-form" action="#">
+        <h2>Login Form</h2>
+        <div class="input-field">
+          <input type="text" required />
+          <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" required />
+          <label>Enter your password</label>
+        </div>
+        <div class="forget">
+          <label for="remember">
+            <input type="checkbox" id="remember" />
+            <p>Remember me</p>
+          </label>
+          <a href="#" id="show-forgot-password">Forgot password?</a>
+        </div>
+        <button type="submit" id="login">Log In</button>
+        <div class="register">
+          <p>Don't have an account? <a href="#" id="show-signup">Register</a></p>
+        </div>
+      </form>
+      
+      <form id="signup-form" action="#" style="display: none;">
+        <h2>Sign Up Form</h2>
+        <div class="input-field">
+          <input type="text" required />
+          <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" required />
+          <label>Create a password</label>
+        </div>
+        <div class="input-field">
+          <input type="password" required />
+          <label>Confirm your password</label>
+        </div>
+        <button type="submit" style="width: 100%;">Sign Up</button>
+        <div class="register">
+          <p>Already have an account? <a href="#" id="show-login">Log In</a></p>
+        </div>
+      </form>
+
+      <form id="forgot-password-form" action="#" style="display: none;">
+        <h2>Forgot Password</h2>
+        <div class="input-field">
+          <input type="text" required />
+          <label>Enter your email</label>
+        </div>
+        <button type="submit">Submit</button>
+        <div class="register">
+          <p>Remembered your password? <a href="#" id="show-login-from-forgot">Log In</a></p>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
